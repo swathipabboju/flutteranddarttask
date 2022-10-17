@@ -12,6 +12,7 @@ void main() {
   //string creation
   String name="   hey,uh!!!! Swathi!! ";
   print(name);
+  //examples
 
 
 //isempty
