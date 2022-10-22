@@ -13,7 +13,7 @@ return{
 
 "/getstart":((context)=>GetStart()),
   "/login":((context)=>login()),
-  "/signup":((context)=>SignupScreen())
+  "/signup":((context)=>SignUpPage())
 
 };
   

@@ -39,7 +39,7 @@ class _GetStartState extends State<GetStart> {
               onPressed: () {
 
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => SignupScreen()));
+                    .push(MaterialPageRoute(builder: (context) => SignUpPage()));
 
               },
               child: Text("signin")),
