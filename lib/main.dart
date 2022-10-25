@@ -55,9 +55,8 @@ class _Scree1State extends State<Scree1> {
                   setState(() {
                     userList.add(details);
 
-                  });
-                  
-
+                  }
+                  );
                },
                )
            
@@ -91,11 +90,6 @@ class _Scree1State extends State<Scree1> {
         }
         )
         ),
-
-
-
-       
-        
         );
   
   }

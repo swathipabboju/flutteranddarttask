@@ -26,7 +26,7 @@ class newScreen2 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
-              
+               decoration: InputDecoration(hintText: "Enter your name"),
               
               controller: _usernameController,
               //maxLines: 5,
@@ -35,9 +35,13 @@ class newScreen2 extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(8),
+
             child: TextField(
+              decoration: InputDecoration(hintText: "Enter your email"),
+              
               controller: _emailController,
               keyboardType: TextInputType.none,
+              
               //maxLines: 5,
               // maxLength: 10,
             ),
@@ -51,6 +55,8 @@ class newScreen2 extends StatelessWidget {
               TextButton(
 
                 onPressed: () {
+                 
+                  
                   addUser(_usernameController.text,_emailController.text);
                 Navigator.pop(context);
                 
@@ -76,5 +82,8 @@ class newScreen2 extends StatelessWidget {
       ),
     )
     );
+    
   }
+  
+  
 }
