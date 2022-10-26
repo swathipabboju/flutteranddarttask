@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_project/main.dart';
+import 'package:navigation_project/routes/allPages.dart';
+import 'package:navigation_project/routes/allRoutes.dart';
 //import 'package:flutter/src/widgets/container.dart';
 //import 'package:flutter/src/widgets/framework.dart';
 
@@ -48,7 +50,13 @@ class _loginState extends State<login> {
             onPressed: () {
 
               print("button Action");
-              validateInputs();
+              if(validateInputs()){
+                  Navigator.pushNamed(context, AllRoutes.otp);
+
+              }
+              
+            
+
 
             },
             child: Text("Log In"),
@@ -112,21 +120,26 @@ class _loginState extends State<login> {
 
 
 
-  validateInputs() {
+bool  validateInputs() {
     if (_emailController.text.isEmpty) {
       showAlert("Please enter email");
+      return false;
     }
     else if(isValidEmail(_emailController.text)==false){
       showAlert("please enter valid email");
+       return false;
 
     }
     else if (_passwordController.text.isEmpty) {
       showAlert("Please enter password");
+       return false;
     }
     else if(isValidPassword(_passwordController.text)==false){
       showAlert("please enter valid password");
+       return false;
 
     }
+    return true;
   }
 
   showAlert(String message, {String text = ""}) {

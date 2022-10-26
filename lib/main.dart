@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:navigation_project/LlistviewPage.dart';
 import 'package:navigation_project/getstartPage.dart';
 import 'package:navigation_project/loginPage.dart';
+import 'package:navigation_project/routes/allPages.dart';
+import 'package:navigation_project/routes/allRoutes.dart';
 //import 'package:navigation_project/routes/listview_page.dart';
 //import 'package:navigation_project/routes/listview_page1.dart';
 
@@ -14,7 +16,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: listviewPage(),);
+    return MaterialApp(
+     initialRoute: AllRoutes.initial,
+     routes: AllPages.routes,
+      );
   }
 }
 

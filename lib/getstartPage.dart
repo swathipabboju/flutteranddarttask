@@ -4,7 +4,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:navigation_project/AddressPage.dart';
 import 'package:navigation_project/loginPage.dart';
+import 'package:navigation_project/routes/allRoutes.dart';
 import 'package:navigation_project/signupPage.dart';
 
 class GetStart extends StatefulWidget {
@@ -27,9 +29,13 @@ class _GetStartState extends State<GetStart> {
           
           TextButton(
               onPressed: () {
-
+                Navigator.pushNamed(context,AllRoutes.login);
+/*
+// only for 2 screens
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) => login()));
+
+                    */
 
               },
               child: Text("login")),
@@ -37,9 +43,14 @@ class _GetStartState extends State<GetStart> {
 
               TextButton(
               onPressed: () {
+                //Navigator.popUntil(context, ModalRoute.withName(AllRoutes.address));
 
-                Navigator.of(context)
+               /* Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) => SignUpPage()));
+
+                    */
+
+                    Navigator.pushNamed(context,AllRoutes.signup);
 
               },
               child: Text("signin")),
