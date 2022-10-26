@@ -13,7 +13,7 @@ class DashBoard extends StatelessWidget {
         title: Text("Dashboard")
         ),
         body: TextButton(onPressed: () { 
-          Navigator.pushNamed(context, AllRoutes.forgot);
+          Navigator.pushNamed(context, AllRoutes.address);
          },
         child: Text("Dashborad")),
         );

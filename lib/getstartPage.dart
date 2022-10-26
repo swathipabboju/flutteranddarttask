@@ -29,7 +29,7 @@ class _GetStartState extends State<GetStart> {
           
           TextButton(
               onPressed: () {
-                Navigator.pushNamed(context,AllRoutes.login);
+                Navigator.pushNamed(context,AllRoutes.forgot);
 /*
 // only for 2 screens
                 Navigator.of(context)

@@ -14,7 +14,7 @@ class AddressPage extends StatelessWidget {
       appBar: AppBar(title: Text("Address Details"),
       ),
       body: TextButton(onPressed: () {
-      Navigator.pushNamed(context, AllRoutes.dashBoard);
+      Navigator.popUntil(context, ModalRoute.withName(AllRoutes.forgot));
       },
       child: Text("click"),),
       );

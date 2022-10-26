@@ -10,7 +10,7 @@ class ForgotPassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text("Forgot Password")),
     body: TextButton(onPressed: () {
-      Navigator.pushNamed(context, AllRoutes.getstart);
+      Navigator.pushNamed(context, AllRoutes.dashBoard);
     },child: Text("forgot password"),
     ),
     );
